@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="163dp"
+    android:layout_height="108dp"
+    android:background="#36ffffff"
+    android:layout_marginVertical="5dp">
+
+    <TextView
+        android:id="@+id/nameObj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="7dp"
+        android:height="68dp"
+        android:text="МАТАНАЛ"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameObj"
+        android:background="#36ffffff"
+        android:paddingBottom="3dp">
+
+        <TextView
+            android:id="@+id/teacherObj"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="3dp"
+            android:text="Шишуков Леонид Сергеевич"
+            android:textColor="#fff"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/infoObj"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@id/teacherObj"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:paddingHorizontal="5dp"
+            android:paddingBottom="2dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="10.10"
+            android:textColor="#fff"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:background="@drawable/infoobj"/>
+    </RelativeLayout>
+
+</RelativeLayout>

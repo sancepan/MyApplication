@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MetMat_Video"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/titleObj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:text="Матан"
+        android:textColor="#fff"
+        android:textSize="24dp"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Tab"
+        android:layout_below="@+id/titleObj"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="5dp"
+            android:id="@+id/tab_layout"
+            app:tabTextColor="#666"
+            app:tabRippleColor="#fff"
+            app:tabIndicatorColor="#fff"
+            app:tabIndicatorFullWidth="false"
+            app:tabBackground="@drawable/tab_color_selector"
+            style="@style/MyCustomTabLayout">
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/Tab"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>
