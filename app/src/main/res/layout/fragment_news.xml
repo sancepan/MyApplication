@@ -5,16 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background">
-
+    android:background="@color/background"
+    android:gravity="center_horizontal">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/titleNews"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="News"
-        android:textSize="50dp"
-        android:layout_centerInParent="true"
+        android:paddingVertical="3dp"
+        android:paddingLeft="20dp"
+        android:text="Новости"
+        android:textStyle="bold"
         android:textColor="#fff"
-        />
+        android:textSize="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
 
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/titleNews"
+        android:layout_height="0.1dp"
+        android:background="#7b7b7b"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/line"
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="50dp"
+        android:layout_marginHorizontal="10dp" />
 </RelativeLayout>
